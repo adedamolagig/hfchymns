@@ -2,7 +2,8 @@
 
 <div id="lyrics-container" class="text-center">  
     <div id="lyrics-header">
-        <h1>{{ $song->name }}</h1>
+        <!-- <h1>{{$song->title}}</h1> -->
+        <h1>@isset($song->title){{ $song->title }}@endisset</h1>
         <span id="lyrics-album-details">
             {{$song->artist->name}} - {{$song->album}} Album
         </span>  
@@ -14,7 +15,11 @@
         </div><!--/#lyrics-thumbnail-->
     </div><!--/#lyrics-header-->
     <div id="lyrics-content">
-        <p><strong>"{{ $song->name }}"</strong></p>
+        <p><strong>"@isset($song->title){{ $song->title }}@endisset"</strong></p>
         <p>{!! nl2br($song->lyrics) !!}</p>
     </div><!--/#lyrics-content-->
 </div> 
+
+@isset($enrolment->enrollee->surname)
+    {{$enrolment->enrollee->surname}}
+@endisset
