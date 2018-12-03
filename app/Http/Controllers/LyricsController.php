@@ -15,7 +15,7 @@ class LyricsController extends Controller
 
     public function song(Request $request, $id)
     {
-        $song = Song::find($id);
+        $song = Song::find($id)->first();
 
         return view('songs', compact('song'));
     }
