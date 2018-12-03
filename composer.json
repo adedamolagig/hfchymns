@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.6.4",
         "algolia/algoliasearch-client-php": "^1.18",
-        "doctrine/dbal": "^2.5",
+        "doctrine/dbal": "^2.6.3",
         "doctrine/doctrine-bundle": "^1.9",
         "laravel/framework": "5.4.*",
         "laravel/scout": "^3.0",

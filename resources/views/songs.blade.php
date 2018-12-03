@@ -2,8 +2,7 @@
 
 <div id="lyrics-container" class="text-center">  
     <div id="lyrics-header">
-        <!-- <h1>{{$song->title}}</h1> -->
-        <!-- <h1>@isset($song->title){{ $song->title }}@endisset</h1> -->
+        
         <span id="lyrics-album-details">
             {{$song->artist->name}} - {{$song->album}} Album
         </span>  
