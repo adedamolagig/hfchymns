@@ -18,9 +18,9 @@
           </div>          
 
     </div>
-    <div  id="login-link" class="col-md-4 text-right">
+    <!-- <div  id="login-link" class="col-md-4 text-right">
             <a href="{{route('login')}}">Login</a>
-    </div>
+    </div> -->
 </div>
 
 
